@@ -31,9 +31,9 @@ export function StoryModal({ story, open, onOpenChange }: StoryModalProps) {
       <DialogContentFullscreen className="p-0 gap-0">
         {loading && (
           <>
-            <DialogTitle className="sr-only">Chargement de l'histoire</DialogTitle>
+            <DialogTitle className="sr-only">Chargement de l&apos;histoire</DialogTitle>
             <DialogDescription className="sr-only">
-              Veuillez patienter pendant le chargement de l'histoire
+              Veuillez patienter pendant le chargement de l&apos;histoire
             </DialogDescription>
             <div className="flex items-center justify-center h-full bg-gradient-to-br from-gray-950 via-gray-900 to-black">
               <div className="text-center space-y-8">
@@ -54,7 +54,7 @@ export function StoryModal({ story, open, onOpenChange }: StoryModalProps) {
                 {/* Texte avec animation */}
                 <div className="space-y-2">
                   <p className="text-white text-lg font-medium animate-pulse">
-                    Chargement de l'histoire
+                    Chargement de l&apos;histoire
                   </p>
                   <div className="flex justify-center gap-1">
                     <span className="w-2 h-2 rounded-full bg-blue-500 animate-bounce" style={{ animationDelay: '0ms' }} />

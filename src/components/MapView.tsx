@@ -72,7 +72,7 @@ export function MapView({ stories, onSelectStory }: MapViewProps) {
                                 className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 cursor-pointer touch-manipulation"
                                 style={{ pointerEvents: 'auto', touchAction: 'manipulation' }}
                             >
-                                <span>Découvrir l'histoire</span>
+                                <span>Découvrir l&apos;histoire</span>
                                 <span>→</span>
                             </button>
                         </div>

@@ -91,7 +91,7 @@ export default function HomePage() {
           </h2>
           <p className="text-slate-600">{error}</p>
           <p className="text-sm text-slate-500 mt-4">
-            Vérifiez que les variables d'environnement Supabase sont correctement configurées.
+            Vérifiez que les variables d&apos;environnement Supabase sont correctement configurées.
           </p>
         </div>
       </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
           History Pins 📌
         </h1>
         <p className="text-sm text-slate-600">
-          Découvrez l'histoire de Paris à travers {stories.length} récit{stories.length > 1 ? 's' : ''} immersif{stories.length > 1 ? 's' : ''}
+          Découvrez l&apos;histoire de Paris à travers {stories.length} récit{stories.length > 1 ? 's' : ''} immersif{stories.length > 1 ? 's' : ''}
         </p>
         <p className="text-xs text-slate-500 mt-2">
           Cliquez sur un marqueur pour commencer
