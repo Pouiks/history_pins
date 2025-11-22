@@ -2,10 +2,26 @@
 
 import { useState } from 'react';
 import { usePublishedStories } from '@/hooks/usePublishedStories';
-import { MapView } from '@/components/MapView';
 import { StoryModal } from '@/components/StoryModal';
 import type { StoryMapPoint } from '@/types/frontend';
 import { Loader2 } from 'lucide-react';
+import dynamic from 'next/dynamic';
+
+// Import dynamique pour éviter le SSR avec Leaflet
+const MapView = dynamic(
+  () => import('@/components/MapView').then((mod) => mod.MapView),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-full flex items-center justify-center bg-slate-100">
+        <div className="text-center space-y-4">
+          <Loader2 className="h-8 w-8 animate-spin text-blue-600 mx-auto" />
+          <p className="text-slate-600">Chargement de la carte...</p>
+        </div>
+      </div>
+    ),
+  }
+);
 
 export default function HomePage() {
   const { stories, loading, error } = usePublishedStories();
