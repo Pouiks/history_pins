@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import type { StoryMapPoint } from '@/types/frontend';
-import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
 interface MapViewProps {
     stories: StoryMapPoint[];
@@ -18,19 +18,22 @@ export function MapView({ stories, onSelectStory }: MapViewProps) {
 
     // Leaflet ne fonctionne que côté client
     useEffect(() => {
-        // Configuration de l'icône UNIQUEMENT côté client
-        const defaultIcon = L.icon({
-            iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-            iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [1, -34],
-            shadowSize: [41, 41],
-        });
+        // Import dynamique de Leaflet pour éviter les problèmes SSR
+        import('leaflet').then((L) => {
+            // Configuration de l'icône UNIQUEMENT côté client
+            const defaultIcon = L.icon({
+                iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+                iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+                shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41],
+            });
 
-        L.Marker.prototype.options.icon = defaultIcon;
-        setIsClient(true);
+            L.Marker.prototype.options.icon = defaultIcon;
+            setIsClient(true);
+        });
     }, []);
 
     if (!isClient) {

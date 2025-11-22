@@ -28,11 +28,14 @@ export function useStoryDetail(
       return;
     }
 
+    // Copie locale pour TypeScript et pour éviter les problèmes de closure
+    const storyId = storyIdOrSlug;
+
     async function loadStory() {
       try {
         setLoading(true);
         setError(null);
-        const data = await getStoryWithAssets(storyIdOrSlug);
+        const data = await getStoryWithAssets(storyId);
         if (!data) {
           setError('Story non trouvée');
         }

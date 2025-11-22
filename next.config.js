@@ -9,6 +9,13 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer }) => {
+    // Exclure Leaflet du bundling côté serveur
+    if (isServer) {
+      config.externals = [...(config.externals || []), 'leaflet', 'react-leaflet'];
+    }
+    return config;
+  },
 }
 
 module.exports = nextConfig
