@@ -51,6 +51,11 @@ export function StoryListPanel({
   const [query, setQuery] = useState('');
   const [filterOpen, setFilterOpen] = useState(false);
 
+  // Sur mobile, on replie le panneau au montage pour laisser voir la carte d'abord.
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth < 640) setOpen(false);
+  }, []);
+
   const toggleEra = (key: string) => {
     const next = selectedEras.includes(key)
       ? selectedEras.filter((k) => k !== key)
@@ -73,7 +78,7 @@ export function StoryListPanel({
   }, [filtered, query, onResults]);
 
   return (
-    <div className="absolute top-4 left-4 z-[500] w-[88vw] max-w-sm">
+    <div className="absolute left-3 right-24 top-3 z-[500] sm:left-4 sm:right-auto sm:top-4 sm:w-[88vw] sm:max-w-sm">
       <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/85 shadow-xl shadow-slate-900/10 backdrop-blur-md">
         {/* En-tête / marque */}
         <button

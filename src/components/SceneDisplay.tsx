@@ -31,7 +31,7 @@ export function SceneDisplay({ scene, lang = 'fr' }: SceneDisplayProps) {
         />
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
-          <p className="text-white/40 text-lg">{label}</p>
+          <p className="text-white/40 text-base sm:text-lg">{label}</p>
         </div>
       )}
 
@@ -40,8 +40,8 @@ export function SceneDisplay({ scene, lang = 'fr' }: SceneDisplayProps) {
 
       {/* Texte de la scène en bas */}
       {text && (
-        <div className="absolute bottom-0 left-0 right-0 p-8 z-10">
-          <p className="text-white text-xl leading-relaxed font-normal max-w-4xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+        <div className="absolute bottom-0 left-0 right-0 p-4 pb-5 sm:p-6 md:p-8 z-10">
+          <p className="text-white text-[0.8rem] sm:text-base md:text-lg leading-snug sm:leading-relaxed font-normal max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
             {text}
           </p>
         </div>

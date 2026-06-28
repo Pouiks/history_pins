@@ -60,7 +60,7 @@ const DialogContentFullscreen = React.forwardRef<
     <DialogPrimitive.Content
       ref={ref}
       className={cn(
-        "fixed left-[50%] top-[50%] z-[9999] translate-x-[-50%] translate-y-[-50%] w-[95vw] max-w-5xl h-[90vh] bg-black rounded-xl shadow-2xl overflow-hidden data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95",
+        "fixed left-[50%] top-[50%] z-[9999] translate-x-[-50%] translate-y-[-50%] w-full h-[100dvh] max-w-none rounded-none sm:w-[95vw] sm:max-w-5xl sm:h-[90vh] sm:rounded-xl bg-black shadow-2xl overflow-hidden data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95",
         className
       )}
       {...props}

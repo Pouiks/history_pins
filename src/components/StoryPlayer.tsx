@@ -180,7 +180,7 @@ export function StoryPlayer({ story, lang = 'fr' }: StoryPlayerProps) {
       {/* Contrôles */}
       <div className="relative flex-shrink-0 bg-black">
         {/* Timeline */}
-        <div className="px-4 pt-3">
+        <div className="px-3 pt-2 sm:px-4 sm:pt-3">
           <div
             className="relative w-full h-2 bg-white/20 rounded-full overflow-hidden cursor-pointer hover:h-3 transition-all group"
             onClick={onSeek}
@@ -202,8 +202,8 @@ export function StoryPlayer({ story, lang = 'fr' }: StoryPlayerProps) {
         </div>
 
         {/* Boutons */}
-        <div className="flex items-center justify-between px-4 py-3">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between px-2.5 py-2 sm:px-4 sm:py-3">
+          <div className="flex items-center gap-0.5 sm:gap-2">
             <Button
               onClick={togglePlay}
               size="sm"
@@ -237,13 +237,13 @@ export function StoryPlayer({ story, lang = 'fr' }: StoryPlayerProps) {
               <SkipForward className="h-4 w-4" />
             </Button>
 
-            <div className="text-white/80 text-sm ml-2">
+            <div className="text-white/80 text-xs sm:text-sm ml-1 sm:ml-2 tabular-nums whitespace-nowrap">
               {formatTime(currentTime)} / {formatTime(totalDuration)}
             </div>
           </div>
 
           {/* Volume + info scène */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             {hasAnyAudio && (
               <div className="group/vol flex items-center gap-2">
                 <Button
@@ -269,7 +269,7 @@ export function StoryPlayer({ story, lang = 'fr' }: StoryPlayerProps) {
               </div>
             )}
 
-            <div className="text-white/60 text-sm">
+            <div className="hidden sm:block text-white/60 text-sm max-w-[40vw] truncate">
               {en ? 'Scene' : 'Scène'} {index + 1} / {totalScenes}
               {scene && <span className="ml-2">· {sceneLabel}</span>}
             </div>
@@ -277,7 +277,7 @@ export function StoryPlayer({ story, lang = 'fr' }: StoryPlayerProps) {
         </div>
 
         {/* Indicateurs de scènes */}
-        <div className="flex justify-center gap-1 pb-3 px-4">
+        <div className="flex justify-center gap-1 pb-2.5 px-3 sm:pb-3 sm:px-4">
           {scenes.map((_, idx) => (
             <div
               key={idx}

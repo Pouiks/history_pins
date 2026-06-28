@@ -217,15 +217,16 @@ export default function HomePage() {
       </div>
 
       {/* Indice en bas + lien crawlable vers la liste complète (SEO) */}
-      <div className="absolute bottom-4 left-1/2 z-[400] flex -translate-x-1/2 items-center gap-2">
-        <div className="pointer-events-none rounded-full border border-white/60 bg-white/80 px-4 py-2 text-xs font-medium text-slate-600 shadow-lg backdrop-blur-md">
+      <div className="absolute bottom-4 left-1/2 z-[400] flex max-w-[92vw] -translate-x-1/2 items-center gap-2">
+        {/* L'indice verbeux n'apparaît qu'à partir de sm (place limitée sur mobile) */}
+        <div className="pointer-events-none hidden rounded-full border border-white/60 bg-white/80 px-4 py-2 text-xs font-medium text-slate-600 shadow-lg backdrop-blur-md sm:block">
           {lang === 'en'
             ? 'Click a point on the map to explore a story'
             : 'Cliquez sur un point de la carte pour explorer un récit'}
         </div>
         <Link
           href={lang === 'en' ? '/en/histoires' : '/histoires'}
-          className="rounded-full border border-white/60 bg-white/80 px-4 py-2 text-xs font-semibold text-slate-700 shadow-lg backdrop-blur-md transition-colors hover:text-blue-700"
+          className="whitespace-nowrap rounded-full border border-white/60 bg-white/80 px-4 py-2 text-xs font-semibold text-slate-700 shadow-lg backdrop-blur-md transition-colors hover:text-blue-700"
         >
           {lang === 'en' ? 'All stories' : 'Toutes les histoires'}
         </Link>

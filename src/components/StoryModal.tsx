@@ -98,27 +98,30 @@ export function StoryModal({ story, open, onOpenChange, lang = 'fr' }: StoryModa
         {!loading && !error && storyDetail && (
           <div className="w-full h-full flex flex-col">
             {/* Header avec infos */}
-            <div className="flex-shrink-0 bg-gradient-to-b from-gray-900 to-gray-800 px-6 py-4 border-b border-white/10">
-              <div className="flex items-start justify-between gap-4">
+            <div className="flex-shrink-0 bg-gradient-to-b from-gray-900 to-gray-800 px-4 py-3 sm:px-6 sm:py-4 border-b border-white/10 pr-14 sm:pr-16">
+              <div className="flex items-start justify-between gap-3 sm:gap-4">
                 <div className="min-w-0">
-                  <DialogTitle className="text-white text-xl font-bold mb-1">
+                  <DialogTitle className="text-white text-base sm:text-xl font-bold mb-0.5 sm:mb-1 truncate">
                     {lang === 'en' && storyDetail.titleEn
                       ? storyDetail.titleEn
                       : storyDetail.title}
                   </DialogTitle>
-                  <DialogDescription className="flex gap-4 text-white/60 text-sm">
+                  <DialogDescription className="flex flex-wrap gap-x-3 gap-y-0.5 text-white/60 text-xs sm:text-sm">
                     {storyDetail.period && <span>📅 {storyDetail.period}</span>}
                     {storyDetail.locationName && (
-                      <span>📍 {storyDetail.locationName}</span>
+                      <span className="truncate">📍 {storyDetail.locationName}</span>
                     )}
                   </DialogDescription>
                 </div>
                 {/* Pont vers la page indexable (URL partageable + maillage SEO) */}
                 <Link
                   href={storyPath(storyDetail.slug, lang)}
-                  className="shrink-0 whitespace-nowrap rounded-md border border-white/20 px-3 py-1.5 text-xs font-semibold text-white/90 transition-colors hover:border-white/40 hover:bg-white/10"
+                  className="shrink-0 self-start whitespace-nowrap rounded-md border border-white/20 px-2.5 py-1 sm:px-3 sm:py-1.5 text-[11px] sm:text-xs font-semibold text-white/90 transition-colors hover:border-white/40 hover:bg-white/10"
                 >
-                  {lang === 'en' ? 'Read full page →' : 'Lire la page complète →'}
+                  <span className="sm:hidden">{lang === 'en' ? 'Page →' : 'La page →'}</span>
+                  <span className="hidden sm:inline">
+                    {lang === 'en' ? 'Read full page →' : 'Lire la page complète →'}
+                  </span>
                 </Link>
               </div>
             </div>
