@@ -1,0 +1,15 @@
+Avec ses 52 mètres, le donjon de Vincennes reste la plus haute structure fortifiée médiévale d'Europe encore debout. Édifié sous Charles V entre 1361 et 1371, il ne fut jamais conçu comme une simple tour de guet. Derrière ses murs épais, le roi de France logeait, gouvernait et entreposait ce qu'il avait de plus précieux : ses archives, son trésor et sa personne.
+
+## Charles V bâtit sa forteresse-palais (1361-1371)
+
+Le chantier débute en 1361, sous Jean le Bon, mais c'est son fils Charles V qui en fait sa résidence de prédilection. Né à Vincennes en 1338, le futur roi y revient sans cesse. Le donjon, achevé vers 1371, s'élève sur un plan carré flanqué de quatre tourelles d'angle. Chaque étage forme un appartement complet : la chambre du roi occupe le deuxième niveau, surmontée d'une voûte à clé pendante. Une enceinte propre, ceinte de douves et percée d'un châtelet d'entrée, isole la tour du reste du château. Pour atteindre les appartements, il fallait franchir ce poste avancé, puis un escalier en vis logé dans une tourelle. La défense et le confort y sont pensés ensemble.
+
+## Un coffre-fort pour le trésor et les archives
+
+Vincennes n'abritait pas seulement le souverain. Le donjon servait de chambre forte au royaume. Charles V, esprit méthodique, y conserve une partie de sa célèbre bibliothèque — plusieurs centaines de manuscrits, installés au Louvre mais dont l'inventaire dévoile le goût d'un roi lettré. À Vincennes, on garde surtout les joyaux, les espèces et des documents officiels. Les salles basses, voûtées et sans fenêtres accessibles, faisaient office de réserves. La tour cumulait ainsi les fonctions d'un palais, d'un poste militaire et d'une banque royale, le tout protégé par une garnison et un système de fermetures contrôlées.
+
+## De la prison d'État au symbole conservé
+
+Quand les rois délaissent Vincennes pour le Louvre et les châteaux de Loire, le donjon change d'usage. Sa hauteur et son isolement en font une geôle. Henri de Navarre, futur Henri IV, y est détenu après la Saint-Barthélemy de 1572. Le grand Condé y séjourne durant la Fronde, en 1650. Plus tard, le philosophe Diderot y est enfermé en 1749 pour ses écrits jugés subversifs, et le marquis de Sade y passe plusieurs années avant son transfert à la Bastille en 1784. Les graffitis gravés par ces prisonniers sont encore lisibles sur certaines parois. Restauré au XIXe siècle par Viollet-le-Duc puis longtemps occupé par l'armée, le donjon a rouvert au public en 2007 après une vaste campagne de travaux.
+
+> **Le saviez-vous ?** Le donjon a réellement servi de prison à un philosophe et à un écrivain célèbres : Diderot en 1749, pour son *Lettre sur les aveugles*, et le marquis de Sade, incarcéré à Vincennes de 1777 à 1784. On peut encore voir aujourd'hui des inscriptions laissées par les détenus sur les murs des cachots.

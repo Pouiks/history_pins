@@ -1,0 +1,182 @@
+[
+  {
+    "topic": "La fondation de Lutèce par les Parisii",
+    "period": "≈ 250 av. J.-C.",
+    "locationName": "Île de la Cité, Paris",
+    "slug": "la-fondation-de-lutece-par-les-parisii"
+  },
+  {
+    "topic": "La bataille de Lutèce et la conquête romaine",
+    "period": "52 av. J.-C.",
+    "locationName": "Rive gauche (Arènes de Lutèce), Paris",
+    "slug": "la-bataille-de-lutece-et-la-conquete-romaine"
+  },
+  {
+    "topic": "Sainte Geneviève face à la menace d'Attila",
+    "period": "451",
+    "locationName": "Montagne Sainte-Geneviève, Paris",
+    "slug": "sainte-genevieve-face-a-la-menace-d-attila"
+  },
+  {
+    "topic": "Clovis fait de Paris sa capitale",
+    "period": "508",
+    "locationName": "Île de la Cité, Paris",
+    "slug": "clovis-fait-de-paris-sa-capitale"
+  },
+  {
+    "topic": "Le début du chantier de Notre-Dame de Paris",
+    "period": "1163",
+    "locationName": "Île de la Cité, Paris",
+    "slug": "le-debut-du-chantier-de-notre-dame-de-paris"
+  },
+  {
+    "topic": "Le Louvre et l'enceinte de Philippe Auguste",
+    "period": "vers 1190",
+    "locationName": "Louvre, Paris",
+    "slug": "le-louvre-et-l-enceinte-de-philippe-auguste"
+  },
+  {
+    "topic": "La consécration de la Sainte-Chapelle",
+    "period": "1248",
+    "locationName": "Île de la Cité, Paris",
+    "slug": "la-consecration-de-la-sainte-chapelle"
+  },
+  {
+    "topic": "La fondation de la Sorbonne",
+    "period": "vers 1257",
+    "locationName": "Quartier latin, Paris",
+    "slug": "la-fondation-de-la-sorbonne"
+  },
+  {
+    "topic": "La révolte d'Étienne Marcel",
+    "period": "1358",
+    "locationName": "Hôtel de Ville, Paris",
+    "slug": "la-revolte-d-etienne-marcel"
+  },
+  {
+    "topic": "Le massacre de la Saint-Barthélemy",
+    "period": "24 août 1572",
+    "locationName": "Autour du Louvre, Paris",
+    "slug": "le-massacre-de-la-saint-barthelemy"
+  },
+  {
+    "topic": "L'entrée d'Henri IV dans Paris",
+    "period": "1594",
+    "locationName": "Rive droite, Paris",
+    "slug": "l-entree-d-henri-iv-dans-paris"
+  },
+  {
+    "topic": "L'inauguration de la place Royale (place des Vosges)",
+    "period": "1612",
+    "locationName": "Le Marais, Paris",
+    "slug": "l-inauguration-de-la-place-royale-place-des-vosges"
+  },
+  {
+    "topic": "La Fronde",
+    "period": "1648–1653",
+    "locationName": "Paris",
+    "slug": "la-fronde"
+  },
+  {
+    "topic": "La fondation des Invalides",
+    "period": "1670",
+    "locationName": "Les Invalides (7e), Paris",
+    "slug": "la-fondation-des-invalides"
+  },
+  {
+    "topic": "La prise de la Bastille",
+    "period": "14 juillet 1789",
+    "locationName": "Place de la Bastille, Paris",
+    "slug": "la-prise-de-la-bastille"
+  },
+  {
+    "topic": "La Fête de la Fédération",
+    "period": "14 juillet 1790",
+    "locationName": "Champ-de-Mars, Paris",
+    "slug": "la-fete-de-la-federation"
+  },
+  {
+    "topic": "L'exécution de Louis XVI",
+    "period": "21 janvier 1793",
+    "locationName": "Place de la Concorde, Paris",
+    "slug": "l-execution-de-louis-xvi"
+  },
+  {
+    "topic": "Le sacre de Napoléon",
+    "period": "2 décembre 1804",
+    "locationName": "Notre-Dame de Paris",
+    "slug": "le-sacre-de-napoleon"
+  },
+  {
+    "topic": "Les Trois Glorieuses, révolution de Juillet",
+    "period": "27–29 juillet 1830",
+    "locationName": "Bastille / Hôtel de Ville, Paris",
+    "slug": "les-trois-glorieuses-revolution-de-juillet"
+  },
+  {
+    "topic": "L'achèvement de l'Arc de Triomphe",
+    "period": "1836",
+    "locationName": "Place de l'Étoile, Paris",
+    "slug": "l-achevement-de-l-arc-de-triomphe"
+  },
+  {
+    "topic": "La révolution de 1848 et la IIe République",
+    "period": "février 1848",
+    "locationName": "Hôtel de Ville, Paris",
+    "slug": "la-revolution-de-1848-et-la-iie-republique"
+  },
+  {
+    "topic": "Les grands travaux d'Haussmann",
+    "period": "1853–1870",
+    "locationName": "Paris",
+    "slug": "les-grands-travaux-d-haussmann"
+  },
+  {
+    "topic": "La Commune de Paris",
+    "period": "18 mars – 28 mai 1871",
+    "locationName": "Montmartre / Hôtel de Ville, Paris",
+    "slug": "la-commune-de-paris"
+  },
+  {
+    "topic": "L'inauguration de l'Opéra Garnier",
+    "period": "5 janvier 1875",
+    "locationName": "Opéra (9e), Paris",
+    "slug": "l-inauguration-de-l-opera-garnier"
+  },
+  {
+    "topic": "La tour Eiffel et l'Exposition universelle de 1889",
+    "period": "1889",
+    "locationName": "Champ-de-Mars, Paris",
+    "slug": "la-tour-eiffel-et-l-exposition-universelle-de-1889"
+  },
+  {
+    "topic": "La première ligne de métro parisien",
+    "period": "19 juillet 1900",
+    "locationName": "Paris (Porte de Vincennes – Porte Maillot)",
+    "slug": "la-premiere-ligne-de-metro-parisien"
+  },
+  {
+    "topic": "Le défilé de la Victoire",
+    "period": "14 juillet 1919",
+    "locationName": "Arc de Triomphe / Champs-Élysées, Paris",
+    "slug": "le-defile-de-la-victoire"
+  },
+  {
+    "topic": "La rafle du Vél' d'Hiv",
+    "period": "16–17 juillet 1942",
+    "locationName": "Vélodrome d'Hiver (15e), Paris",
+    "slug": "la-rafle-du-vel-d-hiv"
+  },
+  {
+    "topic": "La Libération de Paris",
+    "period": "25 août 1944",
+    "locationName": "Hôtel de Ville / Notre-Dame, Paris",
+    "slug": "la-liberation-de-paris"
+  },
+  {
+    "topic": "Mai 68",
+    "period": "mai 1968",
+    "locationName": "Quartier latin, Paris",
+    "slug": "mai-68"
+  }
+]

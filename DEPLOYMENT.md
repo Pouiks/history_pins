@@ -1,4 +1,4 @@
-# Guide de déploiement - Métronome
+# Guide de déploiement - History Pins
 
 ## 🚀 Déploiement sur Vercel (Recommandé)
 
@@ -11,7 +11,7 @@ Vercel est la plateforme optimale pour Next.js, créée par les mêmes développ
 ```bash
 git init
 git add .
-git commit -m "Initial commit - Métronome application"
+git commit -m "Initial commit - History Pins application"
 ```
 
 2. **Poussez vers GitHub/GitLab** :
@@ -108,11 +108,11 @@ CMD ["node", "server.js"]
 Buildez et lancez :
 
 ```bash
-docker build -t metronome .
+docker build -t history-pins .
 docker run -p 3000:3000 \
   -e NEXT_PUBLIC_SUPABASE_URL=your-url \
   -e NEXT_PUBLIC_SUPABASE_ANON_KEY=your-key \
-  metronome
+  history-pins
 ```
 
 ---

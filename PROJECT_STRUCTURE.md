@@ -1,7 +1,7 @@
-# Structure du projet Métronome
+# Structure du projet History Pins
 
 ```
-metronome/
+history-pins/
 │
 ├── 📄 Configuration
 │   ├── .env.example                  # Template des variables d'environnement

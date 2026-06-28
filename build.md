@@ -6,7 +6,7 @@ Ta mission est de reconstruire l’interface front et les services de lecture, p
 🎯 OBJECTIF DU PROJET
 ---------------------------------------------------
 
-Le projet est une application web immersive inspirée de "Métronome" sur l’histoire de Paris.
+Le projet, « History Pins », est une application web immersive sur l’histoire de France (carte interactive de récits géolocalisés).
 
 Fonctionnement côté utilisateur :
 

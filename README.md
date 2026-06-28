@@ -1,6 +1,6 @@
-# Métronome - Histoires de Paris
+# History Pins — Histoires de France
 
-Application web immersive pour découvrir l'histoire de Paris à travers des récits géolocalisés inspirés de "Métronome".
+Application web immersive pour explorer l'histoire de France sur une carte interactive, à travers des récits géolocalisés.
 
 ## 🎯 Fonctionnalités
 

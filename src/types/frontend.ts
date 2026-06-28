@@ -1,5 +1,8 @@
 // Types utilisés côté frontend pour l'affichage et la logique métier
 
+/** Langue d'affichage de l'application. */
+export type Lang = 'fr' | 'en';
+
 /**
  * Représente un point sur la carte (version minimale pour l'affichage)
  */
@@ -10,6 +13,13 @@ export interface StoryMapPoint {
   latitude: number;
   longitude: number;
   period?: string | null;
+  locationName?: string | null;
+  /** Titre anglais (mode EN). */
+  titleEn?: string | null;
+  /** Clé d'époque (Antiquité, Moyen Âge…) pour le filtre. */
+  era?: string;
+  /** Texte normalisé (sans accents, minuscule) pour la recherche (FR + EN). */
+  keywords?: string;
 }
 
 /**
@@ -21,7 +31,12 @@ export interface SceneAsset {
   startSec: number;
   endSec: number;
   imageUrl: string | null;
+  audioUrl?: string | null;
   textExcerpt?: string | null;
+  // Variantes anglaises (mode EN ; repli sur le FR si absentes)
+  labelEn?: string | null;
+  textExcerptEn?: string | null;
+  audioUrlEn?: string | null;
 }
 
 /**
@@ -30,6 +45,7 @@ export interface SceneAsset {
 export interface StoryDetail {
   id: string;
   title: string;
+  titleEn?: string | null;
   slug: string;
   locationName: string | null;
   latitude: number;

@@ -1,0 +1,730 @@
+[
+  {
+    "topic": "La Lutèce gallo-romaine s'installe sur l'île de la Cité",
+    "slug": "la-lutece-gallo-romaine-s-installe-sur-l-ile-de-la-cite",
+    "locationName": "Île de la Cité",
+    "latitude": 48.855,
+    "longitude": 2.347,
+    "period": "Ier s."
+  },
+  {
+    "topic": "Le pilier des nautes, plus vieux monument de Paris",
+    "slug": "le-pilier-des-nautes-plus-vieux-monument-de-paris",
+    "locationName": "Sous Notre-Dame",
+    "latitude": 48.853,
+    "longitude": 2.3499,
+    "period": "Ier s."
+  },
+  {
+    "topic": "Les arènes de Lutèce",
+    "slug": "les-arenes-de-lutece",
+    "locationName": "Arènes de Lutèce",
+    "latitude": 48.8454,
+    "longitude": 2.353,
+    "period": "Ier-IIe s."
+  },
+  {
+    "topic": "Le cardo maximus, grand axe romain (rue Saint-Jacques)",
+    "slug": "le-cardo-maximus-grand-axe-romain-rue-saint-jacques",
+    "locationName": "Rue Saint-Jacques",
+    "latitude": 48.8462,
+    "longitude": 2.344,
+    "period": "IIe s."
+  },
+  {
+    "topic": "« Tous les chemins mènent à Rome » : voies et bornes milliaires",
+    "slug": "tous-les-chemins-menent-a-rome-voies-et-bornes-milliaires",
+    "locationName": "Place d'Italie",
+    "latitude": 48.8312,
+    "longitude": 2.3558,
+    "period": "IIe s."
+  },
+  {
+    "topic": "Lutèce délaissée et pillée par les invasions germaniques",
+    "slug": "lutece-delaissee-et-pillee-par-les-invasions-germaniques",
+    "locationName": "Rive gauche",
+    "latitude": 48.844,
+    "longitude": 2.345,
+    "period": "IIe-IIIe s."
+  },
+  {
+    "topic": "Le martyre de saint Denis, décapité à Montmartre",
+    "slug": "le-martyre-de-saint-denis-decapite-a-montmartre",
+    "locationName": "Butte Montmartre",
+    "latitude": 48.8867,
+    "longitude": 2.3431,
+    "period": "IIIe s."
+  },
+  {
+    "topic": "Saint Denis céphalophore portant sa tête jusqu'à Saint-Denis",
+    "slug": "saint-denis-cephalophore-portant-sa-tete-jusqu-a-saint-denis",
+    "locationName": "Vers Saint-Denis",
+    "latitude": 48.91,
+    "longitude": 2.35,
+    "period": "IIIe s."
+  },
+  {
+    "topic": "Les premières communautés chrétiennes de Lutèce",
+    "slug": "les-premieres-communautes-chretiennes-de-lutece",
+    "locationName": "Notre-Dame-des-Champs",
+    "latitude": 48.8424,
+    "longitude": 2.33,
+    "period": "IIIe s."
+  },
+  {
+    "topic": "Julien proclamé empereur à Lutèce (360)",
+    "slug": "julien-proclame-empereur-a-lutece-360",
+    "locationName": "Palais des Thermes (Cluny)",
+    "latitude": 48.8503,
+    "longitude": 2.3439,
+    "period": "360"
+  },
+  {
+    "topic": "Julien repousse les Alamans (bataille de Strasbourg, 357)",
+    "slug": "julien-repousse-les-alamans-bataille-de-strasbourg-357",
+    "locationName": "(évoqué) Lutèce",
+    "latitude": 48.8503,
+    "longitude": 2.3439,
+    "period": "357"
+  },
+  {
+    "topic": "Saint Martin partage son manteau",
+    "slug": "saint-martin-partage-son-manteau",
+    "locationName": "Rue Saint-Martin",
+    "latitude": 48.8636,
+    "longitude": 2.3527,
+    "period": "IVe s."
+  },
+  {
+    "topic": "Lutèce prend le nom de Paris (civitas Parisiorum)",
+    "slug": "lutece-prend-le-nom-de-paris-civitas-parisiorum",
+    "locationName": "Île de la Cité",
+    "latitude": 48.855,
+    "longitude": 2.347,
+    "period": "fin IVe s."
+  },
+  {
+    "topic": "Geneviève ravitaille Paris assiégée par les Francs",
+    "slug": "genevieve-ravitaille-paris-assiegee-par-les-francs",
+    "locationName": "Île de la Cité",
+    "latitude": 48.8554,
+    "longitude": 2.345,
+    "period": "Ve s."
+  },
+  {
+    "topic": "Childéric et la montée des Mérovingiens",
+    "slug": "childeric-et-la-montee-des-merovingiens",
+    "locationName": null,
+    "latitude": 48.8554,
+    "longitude": 2.345,
+    "period": "Ve s."
+  },
+  {
+    "topic": "Mort de sainte Geneviève (502), tombeau sur le mont",
+    "slug": "mort-de-sainte-genevieve-502-tombeau-sur-le-mont",
+    "locationName": "Abbaye Sainte-Geneviève",
+    "latitude": 48.8462,
+    "longitude": 2.3464,
+    "period": "502"
+  },
+  {
+    "topic": "Childebert fonde l'abbaye Saint-Germain-des-Prés",
+    "slug": "childebert-fonde-l-abbaye-saint-germain-des-pres",
+    "locationName": "Saint-Germain-des-Prés",
+    "latitude": 48.8539,
+    "longitude": 2.334,
+    "period": "VIe s."
+  },
+  {
+    "topic": "Les rois mérovingiens et les partages du royaume",
+    "slug": "les-rois-merovingiens-et-les-partages-du-royaume",
+    "locationName": null,
+    "latitude": 48.8539,
+    "longitude": 2.334,
+    "period": "VIe s."
+  },
+  {
+    "topic": "Dagobert et l'essor de l'abbaye de Saint-Denis",
+    "slug": "dagobert-et-l-essor-de-l-abbaye-de-saint-denis",
+    "locationName": "Basilique Saint-Denis",
+    "latitude": 48.9355,
+    "longitude": 2.3593,
+    "period": "VIIe s."
+  },
+  {
+    "topic": "Saint Éloi, orfèvre et conseiller du roi",
+    "slug": "saint-eloi-orfevre-et-conseiller-du-roi",
+    "locationName": "Basilique Saint-Denis",
+    "latitude": 48.9355,
+    "longitude": 2.3593,
+    "period": "VIIe s."
+  },
+  {
+    "topic": "La basilique devient nécropole des rois de France",
+    "slug": "la-basilique-devient-necropole-des-rois-de-france",
+    "locationName": "Basilique Saint-Denis",
+    "latitude": 48.9355,
+    "longitude": 2.3593,
+    "period": "VIIe s. →"
+  },
+  {
+    "topic": "Les invasions vikings et le grand siège de Paris (885-886)",
+    "slug": "les-invasions-vikings-et-le-grand-siege-de-paris-885-886",
+    "locationName": "Île de la Cité",
+    "latitude": 48.8554,
+    "longitude": 2.345,
+    "period": "885-886"
+  },
+  {
+    "topic": "Eudes, comte de Paris, héros de la défense",
+    "slug": "eudes-comte-de-paris-heros-de-la-defense",
+    "locationName": "Île de la Cité",
+    "latitude": 48.8554,
+    "longitude": 2.345,
+    "period": "885-886"
+  },
+  {
+    "topic": "Charles le Gros paie rançon aux Normands",
+    "slug": "charles-le-gros-paie-rancon-aux-normands",
+    "locationName": null,
+    "latitude": 48.8554,
+    "longitude": 2.345,
+    "period": "IXe s."
+  },
+  {
+    "topic": "Hugues Capet élu roi des Francs (987)",
+    "slug": "hugues-capet-elu-roi-des-francs-987",
+    "locationName": "Île de la Cité",
+    "latitude": 48.8556,
+    "longitude": 2.345,
+    "period": "987"
+  },
+  {
+    "topic": "Les Robertiens, comtes de Paris devenus rois",
+    "slug": "les-robertiens-comtes-de-paris-devenus-rois",
+    "locationName": null,
+    "latitude": 48.8556,
+    "longitude": 2.345,
+    "period": "Xe s."
+  },
+  {
+    "topic": "Les peurs et l'espérance de l'an mil",
+    "slug": "les-peurs-et-l-esperance-de-l-an-mil",
+    "locationName": "Paris",
+    "latitude": 48.8554,
+    "longitude": 2.345,
+    "period": "v. 1000"
+  },
+  {
+    "topic": "L'essor marchand de la rive droite (la Grève)",
+    "slug": "l-essor-marchand-de-la-rive-droite-la-greve",
+    "locationName": "Place de Grève",
+    "latitude": 48.8566,
+    "longitude": 2.351,
+    "period": "XIe s."
+  },
+  {
+    "topic": "Le Pont-au-Change, ancêtre de la Bourse",
+    "slug": "le-pont-au-change-ancetre-de-la-bourse",
+    "locationName": "Pont au Change",
+    "latitude": 48.8566,
+    "longitude": 2.347,
+    "period": "XIe-XIIe s."
+  },
+  {
+    "topic": "Les Halles, le ventre de Paris",
+    "slug": "les-halles-le-ventre-de-paris",
+    "locationName": "Les Halles",
+    "latitude": 48.8626,
+    "longitude": 2.3449,
+    "period": "XIIe s."
+  },
+  {
+    "topic": "Les cours sur la paille, place Maubert",
+    "slug": "les-cours-sur-la-paille-place-maubert",
+    "locationName": "Place Maubert",
+    "latitude": 48.8502,
+    "longitude": 2.3486,
+    "period": "XIIIe s."
+  },
+  {
+    "topic": "La Grande Peste frappe Paris (1348)",
+    "slug": "la-grande-peste-frappe-paris-1348",
+    "locationName": "Paris",
+    "latitude": 48.8554,
+    "longitude": 2.345,
+    "period": "1348"
+  },
+  {
+    "topic": "Charles V bâtit la Bastille et le Louvre royal",
+    "slug": "charles-v-batit-la-bastille-et-le-louvre-royal",
+    "locationName": "Bastille",
+    "latitude": 48.8532,
+    "longitude": 2.3692,
+    "period": "v. 1370"
+  },
+  {
+    "topic": "La guerre de Cent Ans : Paris aux mains des Anglais",
+    "slug": "la-guerre-de-cent-ans-paris-aux-mains-des-anglais",
+    "locationName": "Paris",
+    "latitude": 48.8554,
+    "longitude": 2.345,
+    "period": "XVe s."
+  },
+  {
+    "topic": "Jeanne d'Arc blessée à la porte Saint-Honoré (1429)",
+    "slug": "jeanne-d-arc-blessee-a-la-porte-saint-honore-1429",
+    "locationName": "Porte Saint-Honoré",
+    "latitude": 48.8649,
+    "longitude": 2.336,
+    "period": "1429"
+  },
+  {
+    "topic": "Le donjon de Vincennes, résidence et coffre-fort royal",
+    "slug": "le-donjon-de-vincennes-residence-et-coffre-fort-royal",
+    "locationName": "Château de Vincennes",
+    "latitude": 48.8425,
+    "longitude": 2.4356,
+    "period": "XIVe-XVe s."
+  },
+  {
+    "topic": "François Ier capturé à Pavie (1525)",
+    "slug": "francois-ier-capture-a-pavie-1525",
+    "locationName": "(évoqué) Louvre",
+    "latitude": 48.8606,
+    "longitude": 2.3376,
+    "period": "1525"
+  },
+  {
+    "topic": "Le Louvre Renaissance de Pierre Lescot",
+    "slug": "le-louvre-renaissance-de-pierre-lescot",
+    "locationName": "Cour Carrée du Louvre",
+    "latitude": 48.8606,
+    "longitude": 2.3376,
+    "period": "XVIe s."
+  },
+  {
+    "topic": "Catherine de Médicis et le palais des Tuileries",
+    "slug": "catherine-de-medicis-et-le-palais-des-tuileries",
+    "locationName": "Jardin des Tuileries",
+    "latitude": 48.8634,
+    "longitude": 2.3275,
+    "period": "XVIe s."
+  },
+  {
+    "topic": "La fête de Vaux et la chute de Fouquet (1661)",
+    "slug": "la-fete-de-vaux-et-la-chute-de-fouquet-1661",
+    "locationName": "(évoqué) Vaux-le-Vicomte",
+    "latitude": 48.8559,
+    "longitude": 2.3125,
+    "period": "1661"
+  },
+  {
+    "topic": "Louis XIV, le Roi-Soleil et Paris",
+    "slug": "louis-xiv-le-roi-soleil-et-paris",
+    "locationName": "Paris",
+    "latitude": 48.8554,
+    "longitude": 2.345,
+    "period": "XVIIe s."
+  },
+  {
+    "topic": "Le métro et les édicules Guimard (kiosque des Noctambules)",
+    "slug": "le-metro-et-les-edicules-guimard-kiosque-des-noctambules",
+    "locationName": "Place Colette / Palais-Royal",
+    "latitude": 48.8636,
+    "longitude": 2.337,
+    "period": "1900-2000"
+  },
+  {
+    "topic": "L'Élysée et les lieux du pouvoir républicain",
+    "slug": "l-elysee-et-les-lieux-du-pouvoir-republicain",
+    "locationName": "Palais de l'Élysée",
+    "latitude": 48.8704,
+    "longitude": 2.3166,
+    "period": "XXe s."
+  },
+  {
+    "topic": "La Grande Arche de la Défense",
+    "slug": "la-grande-arche-de-la-defense",
+    "locationName": "Grande Arche",
+    "latitude": 48.8924,
+    "longitude": 2.2389,
+    "period": "1989"
+  },
+  {
+    "topic": "Le Grand Paris et la ville de demain",
+    "slug": "le-grand-paris-et-la-ville-de-demain",
+    "locationName": "La Défense",
+    "latitude": 48.8917,
+    "longitude": 2.236,
+    "period": "XXIe s."
+  },
+  {
+    "topic": "La fondation de Marseille (Massalia) par les Phocéens",
+    "slug": "la-fondation-de-marseille-massalia-par-les-phoceens",
+    "locationName": "Marseille (Vieux-Port)",
+    "latitude": 43.2965,
+    "longitude": 5.3698,
+    "period": "v. 600 av. J.-C."
+  },
+  {
+    "topic": "La route de l'étain de Cornouailles par les fleuves de Gaule",
+    "slug": "la-route-de-l-etain-de-cornouailles-par-les-fleuves-de-gaule",
+    "locationName": "Vallée de la Seine (Rouen)",
+    "latitude": 49.4431,
+    "longitude": 1.0993,
+    "period": "VIe-Ve av. J.-C."
+  },
+  {
+    "topic": "Le trésor de Vix : la Dame et le cratère celte",
+    "slug": "le-tresor-de-vix-la-dame-et-le-cratere-celte",
+    "locationName": "Vix (Châtillon-sur-Seine)",
+    "latitude": 47.8989,
+    "longitude": 4.5392,
+    "period": "v. 500 av. J.-C."
+  },
+  {
+    "topic": "Bibracte, capitale des Éduens (Mont Beuvray)",
+    "slug": "bibracte-capitale-des-eduens-mont-beuvray",
+    "locationName": "Mont Beuvray",
+    "latitude": 46.9239,
+    "longitude": 4.0392,
+    "period": "Ve-IIe av. J.-C."
+  },
+  {
+    "topic": "Les routes de l'ambre, du sel et du fer",
+    "slug": "les-routes-de-l-ambre-du-sel-et-du-fer",
+    "locationName": "Salins-les-Bains",
+    "latitude": 46.9417,
+    "longitude": 5.8783,
+    "period": "Antiquité celte"
+  },
+  {
+    "topic": "Gergovie : la victoire de Vercingétorix sur César",
+    "slug": "gergovie-la-victoire-de-vercingetorix-sur-cesar",
+    "locationName": "Plateau de Gergovie",
+    "latitude": 45.7186,
+    "longitude": 3.1239,
+    "period": "52 av. J.-C."
+  },
+  {
+    "topic": "Alésia : la reddition de Vercingétorix",
+    "slug": "alesia-la-reddition-de-vercingetorix",
+    "locationName": "Alise-Sainte-Reine",
+    "latitude": 47.5375,
+    "longitude": 4.5006,
+    "period": "52 av. J.-C."
+  },
+  {
+    "topic": "Lugdunum (Lyon), capitale des Gaules",
+    "slug": "lugdunum-lyon-capitale-des-gaules",
+    "locationName": "Fourvière, Lyon",
+    "latitude": 45.7622,
+    "longitude": 4.8225,
+    "period": "Ier s."
+  },
+  {
+    "topic": "Le pont du Gard et l'aqueduc de Nîmes",
+    "slug": "le-pont-du-gard-et-l-aqueduc-de-nimes",
+    "locationName": "Pont du Gard",
+    "latitude": 43.9475,
+    "longitude": 4.535,
+    "period": "Ier s."
+  },
+  {
+    "topic": "Nîmes (Nemausus) et ses arènes",
+    "slug": "nimes-nemausus-et-ses-arenes",
+    "locationName": "Arènes de Nîmes",
+    "latitude": 43.8345,
+    "longitude": 4.3601,
+    "period": "Ier-IIe s."
+  },
+  {
+    "topic": "Arles romaine et son amphithéâtre",
+    "slug": "arles-romaine-et-son-amphitheatre",
+    "locationName": "Arles",
+    "latitude": 43.6786,
+    "longitude": 4.6311,
+    "period": "Ier-IIe s."
+  },
+  {
+    "topic": "Le théâtre antique d'Orange",
+    "slug": "le-theatre-antique-d-orange",
+    "locationName": "Orange",
+    "latitude": 44.1359,
+    "longitude": 4.8089,
+    "period": "Ier s."
+  },
+  {
+    "topic": "Tours, le tombeau de saint Martin, grand pèlerinage de Gaule",
+    "slug": "tours-le-tombeau-de-saint-martin-grand-pelerinage-de-gaule",
+    "locationName": "Basilique Saint-Martin, Tours",
+    "latitude": 47.3936,
+    "longitude": 0.6848,
+    "period": "IVe-Ve s."
+  },
+  {
+    "topic": "Le baptême de Clovis à Reims",
+    "slug": "le-bapteme-de-clovis-a-reims",
+    "locationName": "Cathédrale de Reims",
+    "latitude": 49.2537,
+    "longitude": 4.0335,
+    "period": "496"
+  },
+  {
+    "topic": "Charles Martel arrête les Arabes à Poitiers",
+    "slug": "charles-martel-arrete-les-arabes-a-poitiers",
+    "locationName": "Poitiers (Moussais)",
+    "latitude": 46.5802,
+    "longitude": 0.3404,
+    "period": "732"
+  },
+  {
+    "topic": "Roncevaux : la mort de Roland",
+    "slug": "roncevaux-la-mort-de-roland",
+    "locationName": "Col de Roncevaux",
+    "latitude": 43.0093,
+    "longitude": -1.3197,
+    "period": "778"
+  },
+  {
+    "topic": "Les drakkars vikings remontent les fleuves",
+    "slug": "les-drakkars-vikings-remontent-les-fleuves",
+    "locationName": "Jumièges (Seine)",
+    "latitude": 49.4339,
+    "longitude": 0.8186,
+    "period": "IXe s."
+  },
+  {
+    "topic": "Saint-Clair-sur-Epte : naissance de la Normandie",
+    "slug": "saint-clair-sur-epte-naissance-de-la-normandie",
+    "locationName": "Saint-Clair-sur-Epte",
+    "latitude": 49.1331,
+    "longitude": 1.6939,
+    "period": "911"
+  },
+  {
+    "topic": "Les chemins de Saint-Jacques-de-Compostelle",
+    "slug": "les-chemins-de-saint-jacques-de-compostelle",
+    "locationName": "Le Puy-en-Velay",
+    "latitude": 45.0429,
+    "longitude": 3.8853,
+    "period": "XIe s. →"
+  },
+  {
+    "topic": "L'abbaye de Cluny, phare de la chrétienté",
+    "slug": "l-abbaye-de-cluny-phare-de-la-chretiente",
+    "locationName": "Cluny",
+    "latitude": 46.4344,
+    "longitude": 4.6592,
+    "period": "Xe-XIIe s."
+  },
+  {
+    "topic": "Conques et le trésor de Sainte-Foy",
+    "slug": "conques-et-le-tresor-de-sainte-foy",
+    "locationName": "Conques",
+    "latitude": 44.6014,
+    "longitude": 2.3978,
+    "period": "XIe s."
+  },
+  {
+    "topic": "Le Mont-Saint-Michel, merveille de l'Occident",
+    "slug": "le-mont-saint-michel-merveille-de-l-occident",
+    "locationName": "Mont-Saint-Michel",
+    "latitude": 48.6361,
+    "longitude": -1.5115,
+    "period": "VIIIe s. →"
+  },
+  {
+    "topic": "Vézelay, colline éternelle et départ de croisade",
+    "slug": "vezelay-colline-eternelle-et-depart-de-croisade",
+    "locationName": "Vézelay",
+    "latitude": 47.4663,
+    "longitude": 3.748,
+    "period": "XIIe s."
+  },
+  {
+    "topic": "Bouvines : la victoire fondatrice de Philippe Auguste",
+    "slug": "bouvines-la-victoire-fondatrice-de-philippe-auguste",
+    "locationName": "Bouvines",
+    "latitude": 50.5717,
+    "longitude": 3.1908,
+    "period": "1214"
+  },
+  {
+    "topic": "Montségur et la chute des cathares",
+    "slug": "montsegur-et-la-chute-des-cathares",
+    "locationName": "Montségur",
+    "latitude": 42.8758,
+    "longitude": 1.8328,
+    "period": "1244"
+  },
+  {
+    "topic": "Carcassonne, la cité fortifiée",
+    "slug": "carcassonne-la-cite-fortifiee",
+    "locationName": "Carcassonne",
+    "latitude": 43.2061,
+    "longitude": 2.364,
+    "period": "XIIIe s."
+  },
+  {
+    "topic": "Chartres, la cathédrale et son pèlerinage",
+    "slug": "chartres-la-cathedrale-et-son-pelerinage",
+    "locationName": "Chartres",
+    "latitude": 48.4477,
+    "longitude": 1.4878,
+    "period": "XIIe-XIIIe s."
+  },
+  {
+    "topic": "Crécy : le désastre de la chevalerie française",
+    "slug": "crecy-le-desastre-de-la-chevalerie-francaise",
+    "locationName": "Crécy-en-Ponthieu",
+    "latitude": 50.2486,
+    "longitude": 1.8836,
+    "period": "1346"
+  },
+  {
+    "topic": "Les bourgeois de Calais",
+    "slug": "les-bourgeois-de-calais",
+    "locationName": "Calais",
+    "latitude": 50.9513,
+    "longitude": 1.8587,
+    "period": "1347"
+  },
+  {
+    "topic": "Azincourt : nouvelle déroute française",
+    "slug": "azincourt-nouvelle-deroute-francaise",
+    "locationName": "Azincourt",
+    "latitude": 50.4636,
+    "longitude": 2.1378,
+    "period": "1415"
+  },
+  {
+    "topic": "Domrémy, le village de Jeanne d'Arc",
+    "slug": "domremy-le-village-de-jeanne-d-arc",
+    "locationName": "Domrémy-la-Pucelle",
+    "latitude": 48.4408,
+    "longitude": 5.6739,
+    "period": "v. 1412"
+  },
+  {
+    "topic": "Jeanne d'Arc délivre Orléans",
+    "slug": "jeanne-d-arc-delivre-orleans",
+    "locationName": "Orléans",
+    "latitude": 47.9029,
+    "longitude": 1.9093,
+    "period": "1429"
+  },
+  {
+    "topic": "Le sacre de Charles VII à Reims",
+    "slug": "le-sacre-de-charles-vii-a-reims",
+    "locationName": "Cathédrale de Reims",
+    "latitude": 49.2537,
+    "longitude": 4.0335,
+    "period": "1429"
+  },
+  {
+    "topic": "Jeanne d'Arc brûlée à Rouen",
+    "slug": "jeanne-d-arc-brulee-a-rouen",
+    "locationName": "Place du Vieux-Marché, Rouen",
+    "latitude": 49.4404,
+    "longitude": 1.0931,
+    "period": "1431"
+  },
+  {
+    "topic": "Chambord, le château-manifeste de François Ier",
+    "slug": "chambord-le-chateau-manifeste-de-francois-ier",
+    "locationName": "Chambord",
+    "latitude": 47.6161,
+    "longitude": 1.517,
+    "period": "1519 →"
+  },
+  {
+    "topic": "Léonard de Vinci au Clos Lucé d'Amboise",
+    "slug": "leonard-de-vinci-au-clos-luce-d-amboise",
+    "locationName": "Amboise (Clos Lucé)",
+    "latitude": 47.4101,
+    "longitude": 0.9892,
+    "period": "1516-1519"
+  },
+  {
+    "topic": "Le siège de La Rochelle et la fin de l'État protestant",
+    "slug": "le-siege-de-la-rochelle-et-la-fin-de-l-etat-protestant",
+    "locationName": "La Rochelle",
+    "latitude": 46.1591,
+    "longitude": -1.152,
+    "period": "1627-1628"
+  },
+  {
+    "topic": "Louis XIV traverse son royaume vers son mariage, Lully en tête",
+    "slug": "louis-xiv-traverse-son-royaume-vers-son-mariage-lully-en-tet",
+    "locationName": "Saint-Jean-de-Luz",
+    "latitude": 43.388,
+    "longitude": -1.663,
+    "period": "1660"
+  },
+  {
+    "topic": "Vauban fortifie les frontières",
+    "slug": "vauban-fortifie-les-frontieres",
+    "locationName": "Citadelle de Besançon",
+    "latitude": 47.2306,
+    "longitude": 6.0356,
+    "period": "XVIIe s."
+  },
+  {
+    "topic": "Le Canal du Midi de Pierre-Paul Riquet",
+    "slug": "le-canal-du-midi-de-pierre-paul-riquet",
+    "locationName": "Seuil de Naurouze",
+    "latitude": 43.4106,
+    "longitude": 1.9744,
+    "period": "1666-1681"
+  },
+  {
+    "topic": "Les grandes routes royales et les relais de poste",
+    "slug": "les-grandes-routes-royales-et-les-relais-de-poste",
+    "locationName": "Saintes (voie royale)",
+    "latitude": 45.747,
+    "longitude": -0.632,
+    "period": "XVIIIe s."
+  },
+  {
+    "topic": "La fuite du roi arrêtée à Varennes",
+    "slug": "la-fuite-du-roi-arretee-a-varennes",
+    "locationName": "Varennes-en-Argonne",
+    "latitude": 49.2247,
+    "longitude": 5.0306,
+    "period": "1791"
+  },
+  {
+    "topic": "La première ligne de chemin de fer (Saint-Étienne–Andrézieux)",
+    "slug": "la-premiere-ligne-de-chemin-de-fer-saint-etienne-andrezieux",
+    "locationName": "Saint-Étienne",
+    "latitude": 45.4397,
+    "longitude": 4.3872,
+    "period": "1827"
+  },
+  {
+    "topic": "L'essor du rail abandonne les routes",
+    "slug": "l-essor-du-rail-abandonne-les-routes",
+    "locationName": "Saint-Germain-en-Laye",
+    "latitude": 48.8973,
+    "longitude": 2.0938,
+    "period": "1837 →"
+  },
+  {
+    "topic": "La course Paris–Bordeaux–Paris, naissance de l'automobile",
+    "slug": "la-course-paris-bordeaux-paris-naissance-de-l-automobile",
+    "locationName": "Bordeaux",
+    "latitude": 44.8378,
+    "longitude": -0.5792,
+    "period": "1895"
+  },
+  {
+    "topic": "Le tunnel sous la Manche",
+    "slug": "le-tunnel-sous-la-manche",
+    "locationName": "Coquelles / Calais",
+    "latitude": 50.9223,
+    "longitude": 1.7944,
+    "period": "1994"
+  }
+]

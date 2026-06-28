@@ -1,0 +1,242 @@
+[
+  {
+    "topic": "La Via Domitia traverse la région et l'oppidum de Sextantio",
+    "slug": "la-via-domitia-traverse-la-region-et-l-oppidum-de-sextantio",
+    "locationName": "Sextantio (Castelnau-le-Lez)",
+    "latitude": 43.6347,
+    "longitude": 3.9028,
+    "period": "118 av. J.-C."
+  },
+  {
+    "topic": "La fondation de Montpellier : la donation au chevalier Guilhem",
+    "slug": "la-fondation-de-montpellier-la-donation-au-chevalier-guilhem",
+    "locationName": "L'Écusson (centre ancien)",
+    "latitude": 43.6112,
+    "longitude": 3.8767,
+    "period": "985"
+  },
+  {
+    "topic": "Notre-Dame-des-Tables, halte des pèlerins de Saint-Jacques",
+    "slug": "notre-dame-des-tables-halte-des-pelerins-de-saint-jacques",
+    "locationName": "Place Jean-Jaurès",
+    "latitude": 43.609,
+    "longitude": 3.8772,
+    "period": "XIe-XIIe s."
+  },
+  {
+    "topic": "Les tours des remparts : la Babote et la tour des Pins",
+    "slug": "les-tours-des-remparts-la-babote-et-la-tour-des-pins",
+    "locationName": "Tour des Pins",
+    "latitude": 43.6133,
+    "longitude": 3.8744,
+    "period": "v. 1200"
+  },
+  {
+    "topic": "Guilhem VIII proclame la liberté d'enseigner la médecine",
+    "slug": "guilhem-viii-proclame-la-liberte-d-enseigner-la-medecine",
+    "locationName": "Vieux Montpellier",
+    "latitude": 43.6128,
+    "longitude": 3.873,
+    "period": "1181"
+  },
+  {
+    "topic": "Les médecins juifs et arabes, chassés d'Espagne, enrichissent l'école",
+    "slug": "les-medecins-juifs-et-arabes-chasses-d-espagne-enrichissent-",
+    "locationName": "Quartier de la faculté",
+    "latitude": 43.6128,
+    "longitude": 3.873,
+    "period": "XIIe-XIIIe s."
+  },
+  {
+    "topic": "Le mikvé médiéval, un des plus anciens bains rituels juifs d'Europe",
+    "slug": "le-mikve-medieval-un-des-plus-anciens-bains-rituels-juifs-d-",
+    "locationName": "Rue de la Barralerie",
+    "latitude": 43.6118,
+    "longitude": 3.8748,
+    "period": "XIIe-XIIIe s."
+  },
+  {
+    "topic": "La fondation de la faculté de médecine (statuts du cardinal Conrad)",
+    "slug": "la-fondation-de-la-faculte-de-medecine-statuts-du-cardinal-c",
+    "locationName": "Monastère Saint-Benoît",
+    "latitude": 43.6142,
+    "longitude": 3.8722,
+    "period": "17 août 1220"
+  },
+  {
+    "topic": "La bulle du pape Nicolas IV érige l'université (studium generale)",
+    "slug": "la-bulle-du-pape-nicolas-iv-erige-l-universite-studium-gener",
+    "locationName": "Vieux Montpellier",
+    "latitude": 43.6128,
+    "longitude": 3.873,
+    "period": "1289"
+  },
+  {
+    "topic": "Marie de Montpellier épouse Pierre II d'Aragon, la Grande Charte",
+    "slug": "marie-de-montpellier-epouse-pierre-ii-d-aragon-la-grande-cha",
+    "locationName": "L'Écusson",
+    "latitude": 43.6112,
+    "longitude": 3.8767,
+    "period": "1204"
+  },
+  {
+    "topic": "La naissance de Jacques Ier d'Aragon à Montpellier",
+    "slug": "la-naissance-de-jacques-ier-d-aragon-a-montpellier",
+    "locationName": "L'Écusson",
+    "latitude": 43.6112,
+    "longitude": 3.8767,
+    "period": "1208"
+  },
+  {
+    "topic": "L'apogée : capitale du négoce des épices et des tissus",
+    "slug": "l-apogee-capitale-du-negoce-des-epices-et-des-tissus",
+    "locationName": "Place Jean-Jaurès",
+    "latitude": 43.609,
+    "longitude": 3.8772,
+    "period": "1204-1349"
+  },
+  {
+    "topic": "Pétrarque étudie le droit à Montpellier",
+    "slug": "petrarque-etudie-le-droit-a-montpellier",
+    "locationName": "Vieux Montpellier",
+    "latitude": 43.6128,
+    "longitude": 3.873,
+    "period": "v. 1316-1320"
+  },
+  {
+    "topic": "La création du cours d'anatomie",
+    "slug": "la-creation-du-cours-d-anatomie",
+    "locationName": "Faculté de médecine",
+    "latitude": 43.6142,
+    "longitude": 3.8722,
+    "period": "1340"
+  },
+  {
+    "topic": "Le roi de Majorque vend Montpellier à Philippe VI",
+    "slug": "le-roi-de-majorque-vend-montpellier-a-philippe-vi",
+    "locationName": "L'Écusson",
+    "latitude": 43.6112,
+    "longitude": 3.8767,
+    "period": "1349"
+  },
+  {
+    "topic": "Le pape Urbain V fonde le monastère Saint-Benoît",
+    "slug": "le-pape-urbain-v-fonde-le-monastere-saint-benoit",
+    "locationName": "Cathédrale / faculté",
+    "latitude": 43.6142,
+    "longitude": 3.8722,
+    "period": "1364"
+  },
+  {
+    "topic": "Jacques Cœur s'installe à Montpellier, plaque tournante du commerce",
+    "slug": "jacques-c-ur-s-installe-a-montpellier-plaque-tournante-du-co",
+    "locationName": "Vieux Montpellier",
+    "latitude": 43.6105,
+    "longitude": 3.8762,
+    "period": "1432"
+  },
+  {
+    "topic": "Rabelais étudiant à la faculté de médecine",
+    "slug": "rabelais-etudiant-a-la-faculte-de-medecine",
+    "locationName": "Faculté de médecine",
+    "latitude": 43.6142,
+    "longitude": 3.8722,
+    "period": "1530"
+  },
+  {
+    "topic": "Nostradamus inscrit à la faculté de médecine",
+    "slug": "nostradamus-inscrit-a-la-faculte-de-medecine",
+    "locationName": "Faculté de médecine",
+    "latitude": 43.6142,
+    "longitude": 3.8722,
+    "period": "1529"
+  },
+  {
+    "topic": "L'évêché quitte Maguelone : Saint-Pierre devient cathédrale",
+    "slug": "l-eveche-quitte-maguelone-saint-pierre-devient-cathedrale",
+    "locationName": "Cathédrale Saint-Pierre",
+    "latitude": 43.6147,
+    "longitude": 3.8719,
+    "period": "1536"
+  },
+  {
+    "topic": "Montpellier, place forte protestante ; destruction de Notre-Dame-des-Tables",
+    "slug": "montpellier-place-forte-protestante-destruction-de-notre-dam",
+    "locationName": "Place Jean-Jaurès",
+    "latitude": 43.609,
+    "longitude": 3.8772,
+    "period": "v. 1560-1567"
+  },
+  {
+    "topic": "Le jardin des plantes, plus ancien jardin botanique de France",
+    "slug": "le-jardin-des-plantes-plus-ancien-jardin-botanique-de-france",
+    "locationName": "Jardin des plantes",
+    "latitude": 43.616,
+    "longitude": 3.8704,
+    "period": "1593"
+  },
+  {
+    "topic": "Le siège de Montpellier et la paix de Montpellier",
+    "slug": "le-siege-de-montpellier-et-la-paix-de-montpellier",
+    "locationName": "Vieille ville",
+    "latitude": 43.61,
+    "longitude": 3.8785,
+    "period": "1622"
+  },
+  {
+    "topic": "La citadelle de Louis XIII pour mater la ville (auj. lycée Joffre)",
+    "slug": "la-citadelle-de-louis-xiii-pour-mater-la-ville-auj-lycee-jof",
+    "locationName": "Citadelle",
+    "latitude": 43.6126,
+    "longitude": 3.8832,
+    "period": "après 1622"
+  },
+  {
+    "topic": "La porte du Peyrou, arc de triomphe à la gloire de Louis XIV",
+    "slug": "la-porte-du-peyrou-arc-de-triomphe-a-la-gloire-de-louis-xiv",
+    "locationName": "Porte du Peyrou",
+    "latitude": 43.6116,
+    "longitude": 3.87,
+    "period": "1693"
+  },
+  {
+    "topic": "La promenade du Peyrou et la statue équestre de Louis XIV",
+    "slug": "la-promenade-du-peyrou-et-la-statue-equestre-de-louis-xiv",
+    "locationName": "Promenade du Peyrou",
+    "latitude": 43.6112,
+    "longitude": 3.8682,
+    "period": "XVIIIe s."
+  },
+  {
+    "topic": "L'aqueduc Saint-Clément et le château d'eau du Peyrou",
+    "slug": "l-aqueduc-saint-clement-et-le-chateau-d-eau-du-peyrou",
+    "locationName": "Aqueduc des Arceaux",
+    "latitude": 43.6135,
+    "longitude": 3.8655,
+    "period": "1753-1766"
+  },
+  {
+    "topic": "La place de la Comédie et l'opéra, « l'Œuf »",
+    "slug": "la-place-de-la-comedie-et-l-opera-l-uf",
+    "locationName": "Place de la Comédie",
+    "latitude": 43.6085,
+    "longitude": 3.8797,
+    "period": "XIXe s."
+  },
+  {
+    "topic": "Le quartier Antigone de Ricardo Bofill",
+    "slug": "le-quartier-antigone-de-ricardo-bofill",
+    "locationName": "Antigone",
+    "latitude": 43.608,
+    "longitude": 3.887,
+    "period": "années 1980"
+  },
+  {
+    "topic": "Le tramway aux décors de Christian Lacroix",
+    "slug": "le-tramway-aux-decors-de-christian-lacroix",
+    "locationName": "Centre-ville",
+    "latitude": 43.608,
+    "longitude": 3.88,
+    "period": "2000"
+  }
+]

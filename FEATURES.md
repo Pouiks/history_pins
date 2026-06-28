@@ -1,4 +1,4 @@
-# Fonctionnalités implémentées - Métronome
+# Fonctionnalités implémentées - History Pins
 
 ## ✅ Fonctionnalités principales
 

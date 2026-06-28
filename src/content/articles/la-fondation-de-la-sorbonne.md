@@ -1,0 +1,15 @@
+Vers 1257, sur la montagne Sainte-Geneviève, un chapelain du roi Louis IX achète quelques maisons pour y loger des étudiants pauvres en théologie. L'homme s'appelle Robert de Sorbon. Le collège modeste qu'il fonde alors prêtera son nom, des siècles plus tard, à l'université de Paris tout entière.
+
+## Robert de Sorbon, un fils de paysans devenu chapelain du roi
+
+Robert de Sorbon naît en 1201 à Sorbon, un village des Ardennes dont il tire son nom. Issu d'une famille modeste, il étudie la théologie à Reims puis à Paris, devient maître réputé et prédicateur, et entre dans l'entourage de Louis IX, le futur Saint Louis. Le roi le tient en estime et le nomme son chapelain. C'est cette proximité avec la cour qui rend l'entreprise possible : Robert connaît de l'intérieur la condition des étudiants démunis qui affluent vers Paris sans ressources pour se loger ni se nourrir.
+
+## Un collège pour les théologiens sans fortune
+
+Au milieu du XIIIe siècle, l'enseignement de la théologie à Paris s'étire sur de longues années — souvent une quinzaine. Seuls les fils de familles aisées ou les bénéficiers de l'Église peuvent en suivre le cursus complet. L'idée de Robert de Sorbon est précise : offrir un toit et une bourse à des étudiants pauvres mais doués, afin qu'ils achèvent leur formation. Vers 1257, il regroupe plusieurs maisons rue Coupe-Gueule, près de l'actuelle place de la Sorbonne. Louis IX confirme la fondation, et le pape Clément IV l'approuve officiellement en 1268. Le collège accueille des *socii*, les boursiers de la maison, encadrés par des règles strictes de vie commune et d'étude.
+
+## Du collège de la rue Coupe-Gueule à l'université d'aujourd'hui
+
+Le collège de Sorbon acquiert vite un prestige considérable dans la faculté de théologie. Sa bibliothèque devient l'une des plus fournies de Paris : au début du XVe siècle, elle compte plus de mille manuscrits, chiffre exceptionnel pour l'époque. Au fil de son histoire, la maison se confond peu à peu avec la faculté de théologie elle-même, au point que « la Sorbonne » finit par désigner cette dernière. Les bâtiments médiévaux disparaissent : c'est le cardinal de Richelieu, proviseur de l'établissement, qui fait reconstruire l'ensemble au XVIIe siècle. La chapelle actuelle, achevée vers 1642, abrite son tombeau, œuvre du sculpteur François Girardon. Les façades néo-Renaissance que l'on voit aujourd'hui, elles, datent d'une reconstruction menée entre 1885 et 1901.
+
+> **Le saviez-vous ?** Le nom « Sorbonne » ne vient ni d'un saint ni d'un lieu antique, mais d'un simple village ardennais, Sorbon, d'où était originaire son fondateur. Le collège médiéval de Robert de Sorbon n'a d'ailleurs jamais accueilli toute l'université : il était réservé à la seule théologie. Ce n'est que bien plus tard que son nom s'est étendu à l'ensemble.

@@ -1,9 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import Link from 'next/link';
 import { usePublishedStories } from '@/hooks/usePublishedStories';
 import { StoryModal } from '@/components/StoryModal';
-import type { StoryMapPoint } from '@/types/frontend';
+import { StoryListPanel } from '@/components/StoryListPanel';
+import type { StoryMapPoint, Lang } from '@/types/frontend';
+import { ERAS } from '@/lib/eras';
 import { Loader2 } from 'lucide-react';
 import dynamic from 'next/dynamic';
 
@@ -26,10 +29,80 @@ const MapView = dynamic(
 export default function HomePage() {
   const { stories, loading, error } = usePublishedStories();
   const [selectedStory, setSelectedStory] = useState<StoryMapPoint | null>(null);
+  const [focusedStory, setFocusedStory] = useState<StoryMapPoint | null>(null);
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [fitTo, setFitTo] = useState<StoryMapPoint[] | null>(null);
+  const [lang, setLang] = useState<Lang>('fr');
+  const [selectedEras, setSelectedEras] = useState<string[]>([]);
   const [modalOpen, setModalOpen] = useState(false);
+
+  // Époques présentes dans le contenu, avec leur nombre d'histoires.
+  const eraChips = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const s of stories) if (s.era) counts[s.era] = (counts[s.era] || 0) + 1;
+    return ERAS.filter((e) => counts[e.key]).map((e) => ({
+      key: e.key,
+      label: e.label,
+      count: counts[e.key],
+    }));
+  }, [stories]);
+
+  // Histoires visibles selon les époques cochées (tout par défaut = aucune cochée).
+  const visibleStories = useMemo(
+    () =>
+      selectedEras.length === 0
+        ? stories
+        : stories.filter((s) => s.era && selectedEras.includes(s.era)),
+    [stories, selectedEras]
+  );
+
+  // Quand une recherche est active, on cadre la carte sur les résultats.
+  const handleResults = useCallback(
+    (results: StoryMapPoint[], query: string) => {
+      setFitTo(query ? results : null);
+    },
+    []
+  );
+
+  // Changement de filtre d'époques : recadre la carte sur la sélection.
+  const handleEras = useCallback(
+    (next: string[]) => {
+      setSelectedEras(next);
+      setFitTo(
+        next.length ? stories.filter((s) => s.era && next.includes(s.era)) : null
+      );
+    },
+    [stories]
+  );
+
+  // Au montage : langue mémorisée si choix manuel, sinon langue du navigateur.
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('hp_lang');
+      if (saved === 'fr' || saved === 'en') {
+        setLang(saved);
+        return;
+      }
+      const nav = (navigator.language || '').toLowerCase();
+      setLang(nav.startsWith('fr') ? 'fr' : 'en');
+    } catch {
+      /* localStorage indisponible : on garde le FR par défaut */
+    }
+  }, []);
+
+  // Bascule manuelle : applique + mémorise le choix.
+  const changeLang = useCallback((l: Lang) => {
+    setLang(l);
+    try {
+      localStorage.setItem('hp_lang', l);
+    } catch {
+      /* ignore */
+    }
+  }, []);
 
   const handleSelectStory = (story: StoryMapPoint) => {
     setSelectedStory(story);
+    setFocusedStory(story);
     setModalOpen(true);
   };
 
@@ -69,7 +142,7 @@ export default function HomePage() {
             <h2 className="text-slate-900 text-2xl font-bold">
               History Pins 📌 </h2>
             <p className="text-slate-600 text-lg">
-              Chargement des histoires de Paris
+              Chargement des histoires de France
             </p>
             <div className="flex justify-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-blue-500 animate-bounce" style={{ animationDelay: '0ms' }} />
@@ -99,10 +172,63 @@ export default function HomePage() {
   }
 
   return (
-    <main className="h-screen w-screen overflow-hidden">
+    <main className="relative h-screen w-screen overflow-hidden">
       {/* Carte */}
       <div className="w-full h-full">
-        <MapView stories={stories} onSelectStory={handleSelectStory} />
+        <MapView
+          stories={visibleStories}
+          onSelectStory={handleSelectStory}
+          focusedStory={focusedStory}
+          hoveredId={hoveredId}
+          fitTo={fitTo}
+          lang={lang}
+        />
+      </div>
+
+      {/* Panneau de navigation */}
+      <StoryListPanel
+        stories={visibleStories}
+        activeId={selectedStory?.id}
+        onSelect={handleSelectStory}
+        onHover={setHoveredId}
+        onResults={handleResults}
+        lang={lang}
+        eras={eraChips}
+        selectedEras={selectedEras}
+        onErasChange={handleEras}
+      />
+
+      {/* Bascule de langue FR / EN */}
+      <div className="absolute right-4 top-4 z-[500] flex overflow-hidden rounded-full border border-white/60 bg-white/85 shadow-lg backdrop-blur-md">
+        {(['fr', 'en'] as Lang[]).map((l) => (
+          <button
+            key={l}
+            type="button"
+            onClick={() => changeLang(l)}
+            className={`px-3 py-1.5 text-xs font-bold uppercase transition-colors ${
+              lang === l
+                ? 'bg-blue-600 text-white'
+                : 'text-slate-600 hover:bg-slate-900/5'
+            }`}
+          >
+            {l}
+          </button>
+        ))}
+      </div>
+
+      {/* Indice en bas + lien crawlable vers la liste complète (SEO) */}
+      <div className="absolute bottom-4 left-1/2 z-[400] flex -translate-x-1/2 items-center gap-2">
+        <div className="pointer-events-none rounded-full border border-white/60 bg-white/80 px-4 py-2 text-xs font-medium text-slate-600 shadow-lg backdrop-blur-md">
+          {lang === 'en'
+            ? 'Click a point on the map to explore a story'
+            : 'Cliquez sur un point de la carte pour explorer un récit'}
+        </div>
+        <Link
+          href={lang === 'en' ? '/en/histoires' : '/histoires'}
+          className="rounded-full border border-white/60 bg-white/80 px-4 py-2 text-xs font-semibold text-slate-700 shadow-lg backdrop-blur-md transition-colors hover:text-blue-700"
+        >
+          {lang === 'en' ? 'All stories' : 'Toutes les histoires'}
+        </Link>
       </div>
 
       {/* Modale de story */}
@@ -110,20 +236,8 @@ export default function HomePage() {
         story={selectedStory}
         open={modalOpen}
         onOpenChange={handleCloseModal}
+        lang={lang}
       />
-
-      {/* Info overlay */}
-      <div className="absolute top-4 left-20 bg-white/95 backdrop-blur-sm p-4 rounded-lg shadow-lg max-w-xs z-[400] pointer-events-auto">
-        <h1 className="text-xl font-bold text-slate-900 mb-1">
-          History Pins 📌
-        </h1>
-        <p className="text-sm text-slate-600">
-          Découvrez l&apos;histoire de Paris à travers {stories.length} récit{stories.length > 1 ? 's' : ''} immersif{stories.length > 1 ? 's' : ''}
-        </p>
-        <p className="text-xs text-slate-500 mt-2">
-          Cliquez sur un marqueur pour commencer
-        </p>
-      </div>
     </main>
   );
 }

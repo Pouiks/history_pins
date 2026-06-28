@@ -20,12 +20,25 @@
 .DS_Store
 *.pem
 
-# debug
+# debug / logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
 
-# local env files
+# éditeurs / OS
+.idea/
+*.swp
+Thumbs.db
+
+# fichiers de travail temporaires (scratch)
+/_*.json
+/_*.html
+
+# local env files (NE JAMAIS committer de secrets : les clés vont dans Vercel)
+.env
+.env.*
+!.env.example
 .env*.local
 .env.local
 
@@ -35,4 +48,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vidéos TikTok générées (lourdes, non nécessaires à l'app)
+/exports/
+
+# artefacts du skill new-story (cache de génération)
+/.claude/skills/new-story/.cache/
 

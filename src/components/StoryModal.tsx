@@ -1,7 +1,9 @@
 'use client';
 
-import type { StoryMapPoint } from '@/types/frontend';
+import Link from 'next/link';
+import type { StoryMapPoint, Lang } from '@/types/frontend';
 import { useStoryDetail } from '@/hooks/useStoryDetail';
+import { storyPath } from '@/lib/site';
 import { StoryPlayer } from './StoryPlayer';
 import {
   Dialog,
@@ -16,12 +18,13 @@ interface StoryModalProps {
   story: StoryMapPoint | null;
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  lang?: Lang;
 }
 
 /**
  * Modale plein écran pour afficher une story avec son player
  */
-export function StoryModal({ story, open, onOpenChange }: StoryModalProps) {
+export function StoryModal({ story, open, onOpenChange, lang = 'fr' }: StoryModalProps) {
   const { story: storyDetail, loading, error } = useStoryDetail(
     story?.id || null
   );
@@ -96,20 +99,33 @@ export function StoryModal({ story, open, onOpenChange }: StoryModalProps) {
           <div className="w-full h-full flex flex-col">
             {/* Header avec infos */}
             <div className="flex-shrink-0 bg-gradient-to-b from-gray-900 to-gray-800 px-6 py-4 border-b border-white/10">
-              <DialogTitle className="text-white text-xl font-bold mb-1">
-                {storyDetail.title}
-              </DialogTitle>
-              <DialogDescription className="flex gap-4 text-white/60 text-sm">
-                {storyDetail.period && <span>📅 {storyDetail.period}</span>}
-                {storyDetail.locationName && (
-                  <span>📍 {storyDetail.locationName}</span>
-                )}
-              </DialogDescription>
+              <div className="flex items-start justify-between gap-4">
+                <div className="min-w-0">
+                  <DialogTitle className="text-white text-xl font-bold mb-1">
+                    {lang === 'en' && storyDetail.titleEn
+                      ? storyDetail.titleEn
+                      : storyDetail.title}
+                  </DialogTitle>
+                  <DialogDescription className="flex gap-4 text-white/60 text-sm">
+                    {storyDetail.period && <span>📅 {storyDetail.period}</span>}
+                    {storyDetail.locationName && (
+                      <span>📍 {storyDetail.locationName}</span>
+                    )}
+                  </DialogDescription>
+                </div>
+                {/* Pont vers la page indexable (URL partageable + maillage SEO) */}
+                <Link
+                  href={storyPath(storyDetail.slug, lang)}
+                  className="shrink-0 whitespace-nowrap rounded-md border border-white/20 px-3 py-1.5 text-xs font-semibold text-white/90 transition-colors hover:border-white/40 hover:bg-white/10"
+                >
+                  {lang === 'en' ? 'Read full page →' : 'Lire la page complète →'}
+                </Link>
+              </div>
             </div>
 
             {/* Player */}
             <div className="flex-1 min-h-0 overflow-hidden">
-              <StoryPlayer story={storyDetail} />
+              <StoryPlayer story={storyDetail} lang={lang} />
             </div>
           </div>
         )}
