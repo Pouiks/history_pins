@@ -1,13 +1,13 @@
 ---
 name: new-story
-description: Génère une histoire géolocalisée complète pour l'app History Pins (récit français + 4-6 scènes + images gpt-image-1 + timings + insertion dans src/content/stories.ts). À invoquer avec /new-story <sujet ou lieu>.
+description: Génère une histoire géolocalisée complète pour l'app HistoFrance (récit français + 4-6 scènes + images gpt-image-1 + timings + insertion dans src/content/stories.ts). À invoquer avec /new-story <sujet ou lieu>.
 argument-hint: <sujet ou lieu> [période=…] [lat=…] [lng=…] [scenes=4-6] [style=…]
 disable-model-invocation: true
 ---
 
-# /new-story — créer une histoire History Pins
+# /new-story — créer une histoire HistoFrance
 
-Génère de bout en bout une nouvelle `StoryDetail` pour l'app **History Pins** (carte de
+Génère de bout en bout une nouvelle `StoryDetail` pour l'app **HistoFrance** (carte de
 l'histoire de France) : récit en français, découpage en scènes, images cohérentes, timings,
 puis insertion dans la source de contenu pour que l'histoire apparaisse sur la carte.
 

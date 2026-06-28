@@ -6,10 +6,10 @@
 import type { Lang } from '@/types/frontend';
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://history-pins.vercel.app'
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://histofrance.com'
 ).replace(/\/$/, '');
 
-export const SITE_NAME = 'History Pins';
+export const SITE_NAME = 'HistoFrance';
 
 export const DEFAULT_LANG: Lang = 'fr';
 

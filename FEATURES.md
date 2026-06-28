@@ -1,4 +1,4 @@
-# Fonctionnalités implémentées - History Pins
+# Fonctionnalités implémentées - HistoFrance
 
 ## ✅ Fonctionnalités principales
 

@@ -1,4 +1,4 @@
-# History Pins — Histoires de France
+# HistoFrance — Histoires de France
 
 Application web immersive pour explorer l'histoire de France sur une carte interactive, à travers des récits géolocalisés.
 

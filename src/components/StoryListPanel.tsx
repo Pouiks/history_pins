@@ -91,7 +91,7 @@ export function StoryListPanel({
           </span>
           <span className="min-w-0 flex-1">
             <span className="block font-serif text-base font-bold leading-tight text-slate-900">
-              History Pins
+              HistoFrance
             </span>
             <span className="block text-xs text-slate-500">
               {query

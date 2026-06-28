@@ -278,7 +278,7 @@ export async function geocode(query) {
     encodeURIComponent(query);
   try {
     const res = await fetch(url, {
-      headers: { "User-Agent": "history-pins/1.0 (story generator)" },
+      headers: { "User-Agent": "histofrance/1.0 (story generator)" },
     });
     if (!res.ok) return null;
     const arr = await res.json();

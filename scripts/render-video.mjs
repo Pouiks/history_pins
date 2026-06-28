@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // render-video.mjs — assemble une histoire en MP4 vertical (TikTok 1080x1920).
 // Images plein cadre + Ken Burns, narration normalisée (-14 LUFS), sous-titres,
-// filigrane et carte de fin (CTA abonnement).
+// filigrane discret et carte de fin sobre (logo + nom de l'app).
 //
 // Usage (depuis la racine du dépôt) :
 //   node scripts/render-video.mjs <slug> [--lang=fr|en] [--force]
@@ -17,9 +17,13 @@ import path from "node:path";
 
 const exec = promisify(execFile);
 const W = 1080, H = 1920, FPS = 30;
-const END_DUR = 2.5; // durée de la carte de fin (s)
-const HANDLE = process.env.TIKTOK_HANDLE || "@historyPins1";
-const CTA = process.env.TIKTOK_CTA || "Une nouvelle pin chaque semaine\\NAbonne-toi";
+const END_DUR = 3; // durée de la carte de fin (s)
+const HANDLE = process.env.TIKTOK_HANDLE || "@histofrance";
+const LOGO = path.resolve("public/brand/logo.png");
+const TAGLINE = {
+  fr: "L'histoire de France, récit par récit",
+  en: "The history of France, story by story",
+};
 
 function die(m) { console.error("\n✖ " + m + "\n"); process.exit(1); }
 
@@ -75,8 +79,9 @@ WrapStyle: 2
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,Arial,54,&H00FFFFFF,&H00000000,&H64000000,1,1,4,1,2,90,90,440,1
-Style: Mark,Arial,34,&H64FFFFFF,&H64000000,&H00000000,1,1,1,0,8,40,40,90,1
-Style: Cta,Arial,66,&H00FFFFFF,&H00000000,&H00000000,1,1,4,2,5,80,80,0,1
+Style: Mark,Arial,30,&H8CFFFFFF,&H8C000000,&H00000000,0,1,1,0,9,44,44,40,1
+Style: EndName,Georgia,88,&H00FFFFFF,&H00202020,&H64000000,1,1,2,2,5,0,0,0,1
+Style: EndTag,Arial,38,&H00D2C7B4,&H00000000,&H00000000,0,1,0,0,5,0,0,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -127,15 +132,22 @@ async function renderStory(slug, story, lang, force) {
   segs.push(endSeg);
 
   const total = cursor + END_DUR;
-  dialogues.push(`Dialogue: 0,${assTime(0)},${assTime(total)},Mark,,0,0,0,,${HANDLE}`);
-  dialogues.push(`Dialogue: 0,${assTime(cursor)},${assTime(total)},Cta,,0,0,0,,${CTA}`);
+  // Filigrane discret : seulement pendant les scènes (la carte de fin a déjà sa marque).
+  dialogues.push(`Dialogue: 0,${assTime(0)},${assTime(cursor)},Mark,,0,0,0,,${HANDLE}`);
+  // Carte de fin sobre : nom de l'app + accroche (le logo est incrusté en overlay image).
+  const tagline = TAGLINE[lang] || TAGLINE.fr;
+  dialogues.push(`Dialogue: 0,${assTime(cursor)},${assTime(total)},EndName,,0,0,0,,{\\an5\\pos(540,1190)\\fad(350,0)}HistoFrance`);
+  dialogues.push(`Dialogue: 0,${assTime(cursor)},${assTime(total)},EndTag,,0,0,0,,{\\an5\\pos(540,1280)\\fad(500,0)}${tagline}`);
 
   await writeFile(path.join(tmp, "list.txt"), segs.map(s => `file '${path.basename(s)}'`).join("\n"), "utf8");
   await writeFile(path.join(tmp, "subs.ass"), assHead() + dialogues.join("\n") + "\n", "utf8");
 
-  // Concat (copie) puis sous-titres + normalisation audio (-14 LUFS) en une passe finale.
+  // Concat (copie), puis logo de fin (overlay sur la carte) + sous-titres + normalisation (-14 LUFS).
   await exec("ffmpeg", ["-y", "-f", "concat", "-safe", "0", "-i", "list.txt", "-c", "copy", "joined.mp4"], { cwd: tmp });
-  await exec("ffmpeg", ["-y", "-i", "joined.mp4", "-vf", "ass=subs.ass",
+  await exec("ffmpeg", ["-y", "-i", "joined.mp4", "-i", LOGO,
+    "-filter_complex",
+    `[1:v]scale=300:300[lg];[0:v][lg]overlay=(main_w-overlay_w)/2:760:enable='gte(t,${cursor.toFixed(3)})'[bg];[bg]ass=subs.ass[v]`,
+    "-map", "[v]", "-map", "0:a",
     "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
     "-af", "loudnorm=I=-14:TP=-1:LRA=11", "-c:a", "aac", "-b:a", "160k", "final.mp4"], { cwd: tmp });
 

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "History Pins — Histoires de France",
+    default: "HistoFrance — Histoires de France",
     template: `%s — ${SITE_NAME}`,
   },
   description:
@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: "fr_FR",
     url: SITE_URL,
-    title: "History Pins — Histoires de France",
+    title: "HistoFrance — Histoires de France",
     description:
       "Des centaines de récits historiques géolocalisés de France, à explorer sur une carte interactive.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "History Pins — Histoires de France",
+    title: "HistoFrance — Histoires de France",
     description:
       "Des centaines de récits historiques géolocalisés de France, à explorer sur une carte interactive.",
   },

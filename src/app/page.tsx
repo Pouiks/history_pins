@@ -140,7 +140,7 @@ export default function HomePage() {
           {/* Texte */}
           <div className="space-y-3">
             <h2 className="text-slate-900 text-2xl font-bold">
-              History Pins 📌 </h2>
+              HistoFrance 📌 </h2>
             <p className="text-slate-600 text-lg">
               Chargement des histoires de France
             </p>

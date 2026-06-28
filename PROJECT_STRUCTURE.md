@@ -1,7 +1,7 @@
-# Structure du projet History Pins
+# Structure du projet HistoFrance
 
 ```
-history-pins/
+histofrance/
 │
 ├── 📄 Configuration
 │   ├── .env.example                  # Template des variables d'environnement

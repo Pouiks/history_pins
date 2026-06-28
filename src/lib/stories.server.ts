@@ -97,7 +97,7 @@ export function buildStoryMetadata(slug: string, lang: Lang): Metadata {
   const era = eraLabel(s.period, lang);
 
   // Title : titre + lieu (s'il n'y figure pas déjà). Le template du layout
-  // ajoute « — History Pins » derrière.
+  // ajoute « — HistoFrance » derrière.
   const locInTitle = loc && base.toLowerCase().includes(loc.toLowerCase());
   const title = loc && !locInTitle ? `${base} · ${loc}` : base;
 

@@ -1,4 +1,4 @@
-# Guide de démarrage rapide - History Pins
+# Guide de démarrage rapide - HistoFrance
 
 ## 🚀 Démarrage en 3 étapes
 
@@ -102,7 +102,7 @@ Vérifiez dans la console du navigateur. Problèmes courants :
 ## 📦 Structure après installation
 
 ```
-history-pins/
+histofrance/
 ├── .env.local              # ⚠️ À créer (voir .env.example)
 ├── package.json            # Dépendances
 ├── next.config.js          # Config Next.js
