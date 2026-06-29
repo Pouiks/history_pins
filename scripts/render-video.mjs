@@ -18,6 +18,7 @@ import path from "node:path";
 const exec = promisify(execFile);
 const W = 1080, H = 1920, FPS = 30;
 const END_DUR = 3; // durée de la carte de fin (s)
+const MIN_SEC = Number(process.env.MIN_VIDEO_SEC) || 40; // plancher : on ne rend pas en dessous
 const HANDLE = process.env.TIKTOK_HANDLE || "@histofrance";
 const LOGO = path.resolve("public/brand/logo.png");
 const TAGLINE = {
@@ -91,6 +92,12 @@ async function renderStory(slug, story, lang, force) {
   const en = lang === "en";
   const out = path.join("exports", `${slug}.${lang}.mp4`);
   if (existsSync(out) && !force) { console.log(`  ↷ ${slug} [${lang}] : déjà rendue.`); return out; }
+
+  // Plancher de qualité : on ne produit pas de vidéo trop courte (narration trop maigre).
+  if (typeof story.durationSec === "number" && story.durationSec > 0 && story.durationSec < MIN_SEC) {
+    console.log(`  ⤬ ${slug} [${lang}] : ${story.durationSec.toFixed(1)}s < ${MIN_SEC}s — ignorée (trop courte).`);
+    return null;
+  }
 
   const tmp = path.join("exports", ".tmp", `${slug}-${lang}`);
   await rm(tmp, { recursive: true, force: true });

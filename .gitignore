@@ -35,6 +35,9 @@ Thumbs.db
 /_*.json
 /_*.html
 
+# narrations vidéo en cours de réécriture (étape intermédiaire avant stories.ts)
+/.narration/
+
 # local env files (NE JAMAIS committer de secrets : les clés vont dans Vercel)
 .env
 .env.*
