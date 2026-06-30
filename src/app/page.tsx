@@ -185,7 +185,7 @@ export default function HomePage() {
         />
       </div>
 
-      {/* Panneau de navigation */}
+      {/* Panneau de navigation (toggle FR/EN intégré dans son en-tête) */}
       <StoryListPanel
         stories={visibleStories}
         activeId={selectedStory?.id}
@@ -193,28 +193,11 @@ export default function HomePage() {
         onHover={setHoveredId}
         onResults={handleResults}
         lang={lang}
+        onLangChange={changeLang}
         eras={eraChips}
         selectedEras={selectedEras}
         onErasChange={handleEras}
       />
-
-      {/* Bascule de langue FR / EN */}
-      <div className="absolute right-4 top-4 z-[500] flex overflow-hidden rounded-full border border-white/60 bg-white/85 shadow-lg backdrop-blur-md">
-        {(['fr', 'en'] as Lang[]).map((l) => (
-          <button
-            key={l}
-            type="button"
-            onClick={() => changeLang(l)}
-            className={`px-3 py-1.5 text-xs font-bold uppercase transition-colors ${
-              lang === l
-                ? 'bg-blue-600 text-white'
-                : 'text-slate-600 hover:bg-slate-900/5'
-            }`}
-          >
-            {l}
-          </button>
-        ))}
-      </div>
 
       {/* Indice en bas + lien crawlable vers la liste complète (SEO) */}
       <div className="absolute bottom-4 left-1/2 z-[400] flex max-w-[92vw] -translate-x-1/2 items-center gap-2">

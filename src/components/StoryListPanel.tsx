@@ -26,6 +26,8 @@ interface StoryListPanelProps {
   /** Appelé quand la recherche change : permet de recadrer la carte. */
   onResults?: (results: StoryMapPoint[], query: string) => void;
   lang?: Lang;
+  /** Bascule de langue (intégrée à l'en-tête du panneau). */
+  onLangChange?: (lang: Lang) => void;
   /** Époques disponibles (avec compte) pour le filtre. */
   eras?: { key: string; label: string; count: number }[];
   selectedEras?: string[];
@@ -43,6 +45,7 @@ export function StoryListPanel({
   onHover,
   onResults,
   lang,
+  onLangChange,
   eras = [],
   selectedEras = [],
   onErasChange,
@@ -78,33 +81,59 @@ export function StoryListPanel({
   }, [filtered, query, onResults]);
 
   return (
-    <div className="absolute left-3 right-24 top-3 z-[500] sm:left-4 sm:right-auto sm:top-4 sm:w-[88vw] sm:max-w-sm">
+    <div className="absolute left-3 right-3 top-3 z-[500] sm:left-4 sm:right-auto sm:top-4 sm:w-[88vw] sm:max-w-sm">
       <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/85 shadow-xl shadow-slate-900/10 backdrop-blur-md">
-        {/* En-tête / marque */}
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="flex w-full items-center gap-3 px-4 py-3.5 text-left transition-colors hover:bg-white/60"
-        >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-600/30">
-            <Compass className="h-5 w-5" />
-          </span>
-          <span className="min-w-0 flex-1">
-            <span className="block font-serif text-base font-bold leading-tight text-slate-900">
-              HistoFrance
+        {/* En-tête : marque (déplie) + bascule de langue + chevron */}
+        <div className="flex w-full items-center gap-2 px-3 py-3 sm:px-4 sm:py-3.5">
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="flex min-w-0 flex-1 items-center gap-3 text-left"
+          >
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-600/30">
+              <Compass className="h-5 w-5" />
             </span>
-            <span className="block text-xs text-slate-500">
-              {query
-                ? `${filtered.length} / ${stories.length} résultat${filtered.length > 1 ? 's' : ''}`
-                : `${stories.length} récit${stories.length > 1 ? 's' : ''} en France`}
+            <span className="min-w-0 flex-1">
+              <span className="block font-serif text-base font-bold leading-tight text-slate-900">
+                HistoFrance
+              </span>
+              <span className="block text-xs text-slate-500">
+                {query
+                  ? `${filtered.length} / ${stories.length} résultat${filtered.length > 1 ? 's' : ''}`
+                  : `${stories.length} récit${stories.length > 1 ? 's' : ''} en France`}
+              </span>
             </span>
-          </span>
-          <ChevronDown
-            className={`h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300 ${
-              open ? '' : '-rotate-90'
-            }`}
-          />
-        </button>
+          </button>
+
+          {onLangChange && (
+            <div className="flex shrink-0 overflow-hidden rounded-full border border-slate-200">
+              {(['fr', 'en'] as Lang[]).map((l) => (
+                <button
+                  key={l}
+                  type="button"
+                  onClick={() => onLangChange(l)}
+                  aria-pressed={lang === l}
+                  className={`px-2 py-1 text-[11px] font-bold uppercase transition-colors ${
+                    lang === l ? 'bg-blue-600 text-white' : 'text-slate-500 hover:bg-slate-900/5'
+                  }`}
+                >
+                  {l}
+                </button>
+              ))}
+            </div>
+          )}
+
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? 'Réduire la liste' : 'Développer la liste'}
+            className="shrink-0 text-slate-400 transition-colors hover:text-slate-600"
+          >
+            <ChevronDown
+              className={`h-5 w-5 transition-transform duration-300 ${open ? '' : '-rotate-90'}`}
+            />
+          </button>
+        </div>
 
         {/* Liste */}
         <div
