@@ -32,12 +32,16 @@ export const metadata: Metadata = {
     title: "HistoFrance — Histoires de France",
     description:
       "Des centaines de récits historiques géolocalisés de France, à explorer sur une carte interactive.",
+    images: [
+      { url: "/og.png", width: 1200, height: 630, alt: "HistoFrance — L'histoire de France" },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "HistoFrance — Histoires de France",
     description:
       "Des centaines de récits historiques géolocalisés de France, à explorer sur une carte interactive.",
+    images: ["/og.png"],
   },
 };
 
