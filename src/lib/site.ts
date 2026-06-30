@@ -6,7 +6,7 @@
 import type { Lang } from '@/types/frontend';
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://histofrance.com'
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://histofrance.fr'
 ).replace(/\/$/, '');
 
 export const SITE_NAME = 'HistoFrance';
